@@ -1,0 +1,165 @@
+/**
+** APLICACIÓN DE ESTILOS GENERALES 
+**/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+	text-align: center;
+	padding: auto;
+}
+
+
+/*Añadir estilo a los items de la barra de navegación*/
+@media (min-width: 768px) {
+	nav li.active,
+	nav li:hover {
+		background: red;
+		transition: width .5s linear; 
+		height: 2px;
+	}
+}
+
+/*Añadir estilo a los items de la barra de navegación menú de hamburguesa*/
+@media (max-width: 768px) {
+	nav li.active,
+	nav li:hover {
+		text-decoration: overline;
+		text-decoration-color: red;  
+	}
+}
+
+
+/*Estilos para el pie de página*/
+.footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer h5{
+	margin-top: 15px;
+	padding: auto;
+}
+
+.footer hr{
+	color: white;
+	margin: 25px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+
+/**
+** APLICACIÓN DE ESTILOS PÁGINA DE INICIO 
+**/
+
+/*Estilos para el control del carousel**/
+/*Control de posición, altura y ancho*/
+#diapositivaCarusel{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+}
+
+
+#diapositivaCarusel .carousel-inner{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background: #000;
+}
+
+
+#diapositivaCarusel .carousel-inner:before{
+	position: absolute;
+	content: '';
+	background: rgba(0, 0, 0, 0.45);
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+
+/*Resolución de las imágenes, posición y fuente*/
+#diapositivaCarusel .carousel-inner .carousel-item{
+	position: relative;
+	height: 100%;
+	width:100%;
+	background: url('../images/Carrusel/Prision.jpg');
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+}
+#diapositivaCarusel .carousel-inner .carousel-item:nth-child(2){
+	background: url('../images/Carrusel/sanatorio.jpg');
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+}
+#diapositivaCarusel .carousel-inner .carousel-item:nth-child(3){
+	background: url('../images/Carrusel/penitenciariacentral.jpg');
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#diapositivaCarusel .carousel-inner .carousel-item:nth-child(4){
+	background: url('../images/Carrusel/barrioOtoya.jpg');
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+/*Control de Estilos para el DIV que contiene el texto dentro del carousel*/
+#diapositivaCarusel .carousel-inner .carousel-item .info{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: auto;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+}
+
+/*Control de Estilos para los títulos del carousel*/
+#diapositivaCarusel .carousel-inner .carousel-item h1{
+	height: auto;
+	color: #fff;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	font-size: 5.5em;
+	font-weight: 750;
+}
+
+/*Control de Estilos para los párrafos*/
+#diapositivaCarusel .carousel-inner .carousel-item p{
+	height: auto;
+	color: #ccc;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: 500;
+	padding: 150px;
+
+}
+
+
