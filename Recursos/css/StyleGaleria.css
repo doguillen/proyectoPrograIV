@@ -1,27 +1,10 @@
-.container {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #e3f2fd;
-}
 
 .testimonial {
     position: relative;
-    max-width: 900px;
     width: 100%;
-    padding: 50px 0;
-    row-gap: 30px;
-    background-color: #fff;
-
-}
-
-.testimonial .image{
-    height: 170px;
-    width: 170px;
-    object-fit: cover;
-    border-radius: 50%;
+    padding: 30px;
+    row-gap: 50px;
+    background-color: #999;
 }
 
 .testimonial .slide{
@@ -34,7 +17,7 @@
 
 .slide p{
     text-align: center;
-    padding: 0 160px;
+    padding: 0 120px;
     font-size: 14px;
     font-weight: 400;
     color: #333;
