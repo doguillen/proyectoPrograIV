@@ -163,3 +163,69 @@ nav{
 }
 
 
+/**
+** APLICACIÓN DE ESTILOS PÁGINA DE ACERCA DE
+**/
+hr#divisiondark{
+	color: black;
+	margin-left: 40%;
+	margin-right: 40%;
+}
+
+#acercaDe {
+    background-color: white;
+    color: black;
+    padding: 20px 0;
+	margin-top: 20px;
+    text-align: center;
+}
+
+div#acercaDe div.col-md-12{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+p#destacado{
+	color: rgb(14, 14, 122);
+	font-style: italic;
+}
+
+div.card p#titulosOrganizacion{
+	font-style: italic;
+	font-size: 15px;
+	color: grey;
+}
+
+.fixed-aside {
+    position: fixed;
+    top: 50%;
+    right: -40px; /* Adjust distance from the right */
+    transform: translateY(-50%) rotate(+90deg);
+    width: 10%;
+    z-index: 1000;
+}
+
+.redirect-box {
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform-origin: top left;
+	
+}
+
+.redirect-box a {
+    display: block;
+    margin-top: 10px;
+}
+
+.redirect-box a:hover {
+	background-color: white;
+	color: black; 
+}
+
+@media (max-width: 768px) {
+
+	.fixed-aside {
+		display:none;
+	}
+
+}
