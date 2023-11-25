@@ -15,9 +15,11 @@ class MiHead extends HTMLElement {
     }
   }
   customElements.define('mi-footer', MiFoot);
-  
-  /* Función para validar el correo en la página de contáctenos */
 
+  
+  /* 
+    Función para validar el correo en la página de contáctenos 
+  */
   $(document).ready(function() {
     //Se envalúa cada que se una tecla se digita en el input de correo
     $('#correo').on('input', function() {
@@ -46,12 +48,22 @@ class MiHead extends HTMLElement {
     });
 });
 
+
+/* 
+  Función para simular que el correo ha sido enviado correctamente
+  Adicionalmente limpia los campos del formulario
+  Elimina la clase .isValid del campo de input
+*/
 $(document).ready(function() {
   $('#formularioContacto').submit(function(e) {
       e.preventDefault(); // Evitar que el formulario se envíe por defecto
 
       var emailInput = $('#correo');
+
+      //Si el correo es válido, significa que tiene añadida la clase .isValid de CSS
+      //Si es así, se procede a enviar el correo (mostrar el MODAL)
       if (emailInput.hasClass('is-valid')) {
+
           // Mostrar un modal o alerta
           $('#successModal').modal('show');
 
