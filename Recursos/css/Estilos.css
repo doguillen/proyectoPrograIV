@@ -186,7 +186,7 @@ div#acercaDe div.col-md-12{
 }
 
 p#destacado{
-	color: rgb(14, 14, 122);
+	color: #BF0000;
 	font-style: italic;
 }
 
@@ -218,14 +218,70 @@ div.card p#titulosOrganizacion{
 }
 
 .redirect-box a:hover {
-	background-color: white;
-	color: black; 
+	background-color: #BF0000;
+	color: white; 
+	border: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
 
 	.fixed-aside {
 		display:none;
 	}
 
+}
+
+/**
+** APLICACIÓN DE ESTILOS PÁGINA DE CONTÁCTENOS
+**/
+
+#contactarnos{
+	padding-right: 5%;
+	padding-left: 5%;
+
+}
+
+#contactarnos h5{
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+#datosContacto{
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+form label.form-label{
+	text-align: left;
+	font-size: 15px;
+	display: block;
+}
+
+
+@media (max-width: 767px) {
+	form label.form-label {
+		text-align: left; 
+	}
+}
+
+#red{
+	color: #BF0000;
+	font-style: oblique;
+}
+
+#fotoContacto{
+	background: url('../images/fondo.jpg');
+	width: 450px;
+	height: 450px;
+	margin-top: 70px;
+}
+
+.is-invalid {
+    border-color: #dc3545; 
+    background-color: #ffcccc; 
+}
+
+.is-valid {
+    border-color: #28a745;
+    background-color: #d4edda; 
 }
