@@ -164,6 +164,37 @@ nav{
 
 
 /**
+** APLICACIÓN DE ESTILOS PÁGINA DE INFORMACION
+**/
+.textoInfo{
+	text-align: justify;
+	font-size: 13px;
+	padding: 2px;
+}
+
+.imgInfo{
+	width: 219px;
+	height: 120px;
+	text-align: center;
+}
+
+.infoCaption{
+	font-size: 10px;
+	font-style: italic;
+}
+
+.infoComentario{
+	color: #BF0000;
+	font-style: italic;
+	text-align: justify;
+	font-size: 12px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+
+
+/**
 ** APLICACIÓN DE ESTILOS PÁGINA DE ACERCA DE
 **/
 hr#divisiondark{
