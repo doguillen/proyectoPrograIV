@@ -77,3 +77,41 @@ $(document).ready(function() {
       }
   });
 });
+
+//Functón de las imágenes de la galería
+function showImages(batch) {
+  $('.tm-gallery-item').hide(); // Hide all gallery items
+
+  // Calculate starting and ending indexes for the batch
+  var start = (batch - 1) * 6;
+  var end = start + 6;
+
+  // Show the images in the selected batch
+  $('.tm-gallery-item').slice(start, end).show();
+}
+
+// Show the first batch of images upon page load
+$(document).ready(function() {
+  showImages(1);
+});
+
+//Functón de las imágenes de la galería
+    $(document).ready(function () {
+        // Asigna el evento clic a los botones del aside
+        $('#link1').on('click', function () {
+          showImages(1)
+        });
+
+        $('#link2').on('click', function () {
+          showImages(2)
+        });
+
+        $('#link3').on('click', function () {
+          showImages(3)
+       });
+      
+        $('#link4').on('click', function () {
+        showImages(4)
+      });
+
+    });
