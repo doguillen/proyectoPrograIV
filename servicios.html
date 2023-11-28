@@ -55,7 +55,6 @@
     <main>
 
         <div class="container" id="acercaDe">
-
             <!-- Sección de Aside Fija que Redirecciona a Servicios -->
             <aside class="fixed-aside">
                 <div class="redirect-box">
@@ -63,14 +62,376 @@
                 </div>
             </aside>
 
-
-
-            <h4> Conozca nuestros servicios </h4>
+            <!-- Titulo Página Servicios -->
+            <h4> Nuestros servicios </h4>
             <hr id="divisiondark">
             <br>
+            <div class="col-md-12">
+                <p>En esta sección encontrará información sobre los servicios que ofrecemos y un apartado donde
+                    encontrará los tours programados
+                    donde podrá reservar un espacio </p>
+            </div>
 
+            <br>
+
+            <!-- Tarjeta dentro de Containers -->
+            <div class="col-md-12" style="margin-bottom: 100px;">
+                <div>
+                    <!-- Transporte -->
+                    <div class="container text-center">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+                            <!-- Transporte -->
+                            <div class="col">
+                                <div class="card">
+                                    <img src="Recursos/images/Servicios/transporte.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title"> Transporte </h5>
+                                        <button type="submit" class="btn btn-dark" data-bs-toggle="modal"
+                                            data-bs-target="#modalTransporte">Detalle</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Alimentación -->
+                            <div class="col">
+                                <div class="card">
+                                    <img src="Recursos/images/Servicios/Alimentacion.jpg" class="card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title"> Alimentación </h5>
+                                        <button type="submit" class="btn btn-dark" data-bs-toggle="modal"
+                                            data-bs-target="#modalAlimentacion">Detalle</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Guía Especializado -->
+                            <div class="col">
+                                <div class="card">
+                                    <img src="Recursos/images/Servicios/guia.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title"> Guía Especializado </h5>
+                                        <button type="submit" class="btn btn-dark" data-bs-toggle="modal"
+                                            data-bs-target="#modalGuia">Detalle</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modals -->
+            <div>
+                <!-- Modal Transporte -->
+                <div class="modal fade" id="modalTransporte" tabindex="-1" aria-labelledby="modalTransporteLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalTransporteLabel">Servicio de Transporte</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Contenido del modal: una columna -->
+                                <div class="row">
+                                    <div class="col-md-12 text-center">
+                                        <p>Todos nuestros Tours, cuentan con servicio de transporte
+                                            saliendo de la esquina suroeste del Teatro Nacional, en el corazón de San
+                                            José dodne uno de nustros guías te estará esperando, junto a nuesto equipo
+                                            de transporte donde sin duda tendras una experiencia unica.
+                                        </p>
+
+                                        <!-- Teatro Nacional Google Maps -->
+                                        <h5> Teatro Nacional</h5>
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d982.502390585632!2d-84.07766443379235!3d9.933161074179514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scr!4v1701193774177!5m2!1ses!2scr"
+                                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Alimentación -->
+                <div class="modal fade" id="modalAlimentacion" tabindex="-1" aria-labelledby="modalAlimentacionLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalAlimentacionLabel">Penitenciaría Central</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Contenido del modal: tres columnas -->
+                                <div class="row">
+                                    <div class="col-md-12 textoInfo">
+                                        <h6>
+                                            Nuestros Tours incluyen:
+                                        </h6>
+                                        <h6>
+                                            <ul>
+                                                <li>Desayuno</li>
+                                                <li>Refrigerio</li>
+                                                <li>Almuerzo</li>
+                                                <li>Café</li>
+                                            </ul>
+                                        </h6>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Guía Especializado -->
+                <div class="modal fade" id="modalGuia" tabindex="-1" aria-labelledby="modalGuiaLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalGuiaLabel">Guia Especializado</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Contenido del modal: tres columnas -->
+                                <div class="row">
+                                    <div class="col-md-12 text-center">
+                                        <h6>
+                                            Contamos con Guias Especializados en el tema, y el apollo de guias locales,
+                                            con nosotros viviras una experiencia unica con detalles historicos, relatos 
+                                            personales.
+                                        </h6>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Cronograma de tours -->
+            <div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Hora Salida</th>
+                            <th scope="col">Destino</th>
+                            <th scope="col">Reservar</th>
+
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <td scope="row">02/12/2023</td>
+                            <td>06:00 am</td>
+                            <td>Isla San Lucas</td>
+                            <td>
+                                <button type="submit" class="btn btn-dark" data-bs-toggle="modal"
+                                    data-bs-target="#modalReservacion">Reservar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row">03/12/2023</td>
+                            <td>06:00 am</td>
+                            <td>Sanatorio Dúran</td>
+                            <td>
+                                <button type="submit" class="btn btn-dark" data-bs-toggle="modal"
+                                    data-bs-target="#modalReservacion">Reservar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row">09/12/2023</td>
+                            <td>06:00 am</td>
+                            <td>Isla San Lucas</td>
+                            <td>
+                                <button type="submit" class="btn btn-dark" data-bs-toggle="modal"
+                                    data-bs-target="#modalReservacion">Reservar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row">10/12/2023</td>
+                            <td>06:00 am</td>
+                            <td>Sanatorio Dúran</td>
+                            <td>
+                                <button type="submit" class="btn btn-dark" data-bs-toggle="modal"
+                                    data-bs-target="#modalReservacion">Reservar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row">16/12/2023</td>
+                            <td>06:00 am</td>
+                            <td>Isla San Lucas</td>
+                            <td>
+                                <button type="submit" class="btn btn-dark" data-bs-toggle="modal"
+                                    data-bs-target="#modalReservacion">Reservar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row">17/12/2023</td>
+                            <td>06:00 am</td>
+                            <td>Sanatorio Dúran</td>
+                            <td>
+                                <button type="submit" class="btn btn-dark" data-bs-toggle="modal"
+                                    data-bs-target="#modalReservacion">Reservar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <!-- Modal Reservación -->
+                <div class="modal fade" id="modalReservacion" tabindex="-1" aria-labelledby="modalReservacionLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalReservacionLabel">Reservación</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Contenido del modal: tres columnas -->
+                                <div class="row">
+                                    <div class="col-md-12 text-center">
+
+
+                                        <h5>También puedes escribirnos para mayor detalle</h5>
+                                        <a aria-label="Chat on WhatsApp" href="https://wa.me/50687334313"
+                                            target="_blank"><img alt="Chat on WhatsApp"
+                                                src="Recursos/images/Servicios/Whatsapp.png" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+
+
+            <!-- Slyder de Testimonios -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonial">
+                            <div class="testi-content">
+                                <div class="slide">
+                                    <img class="rounded-pill" style="height: 170px;width: 170px;"
+                                        src="Recursos/images/Servicios/isla.jpg" alt="isla">
+
+                                    </img>
+                                    <br><br>
+                                    <h3>Guía: “Relata historias del lugar” </h3>
+                                    <p>
+                                        Realmente lo que esas paredes saben, todo el terror ahí vivido y todas las
+                                        torturas, asesinatos, suicidios, violaciones, descuartizamientos, canibalismo,
+                                        etc, todo eso se está quedando en el olvido y en el silencio de las pocas
+                                        personas que aún quedan con vida y que fueron parte de esas paginas negras de
+                                        Costa Rica.
+                                    </p>
+
+                                    <div class="detalles">
+                                        <span class="name"> Ronald Montero, Guía Local </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial">
+                            <div class="testi-content">
+                                <div class="slide">
+                                    <img class="rounded-pill" style="height: 170px;width: 170px;"
+                                        src="Recursos/images/Servicios/Sanatorio.png" alt="Sanatiorio">
+                                    </img>
+                                    <br><br>
+                                    <h3>Vigilante: “Se oyen cosas extrañas” </h3>
+                                    <h5>¿Ha visto u oído cosas?</h5>
+                                    <p>
+                                        Sí, aunque no siempre lo digo. Se oyen cosas extrañas, gritos como de dolor y
+                                        también chiquitos jugando en los pasillos.
+                                    </p>
+
+                                    <div class="detalles">
+                                        <span class="name">Santiago Leitón, cuidador del Sanatorio Durán </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial">
+                            <div class="testi-content">
+                                <div class="slide">
+                                    <img class="rounded-pill" style="height: 170px;width: 170px;"
+                                        src="Recursos/images/Servicios/Casa.png" alt="Casa">
+                                    </img>
+                                    <br><br>
+                                    <h3>Segundo Mito: Familia Knöhr!!</h3>
+                                    <p>
+                                        El segundo mito relata que la familia Knöhr trataba muy mal a sus sirvientes y
+                                        ellos, por venganza al maltrato, los mataron ahorcándolos en los 7 pinos que
+                                        están en la parte trasera de la casa. Suponen que las personas del servicio
+                                        doméstico se hicieron pasar por los dueños que asesinaron y que los
+                                        descendientes de los sirvientes son quienes viven ahora en la casa.
+                                    </p>
+
+                                    <div class="detalles">
+                                        <span class="name">Historiadora, Valeria Ramírez Roldán, Departamento de Cultura
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
         </div>
+        <br><br><br>
     </main>
+
     
 
 	<footer class="footer">
